@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <link href="https://sso.us.es/themes/us/static/assets/css/colors.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript" src="https://sso.us.es/themes/us/static/assets/js/i18n.min.js"></script>
+    <link href="https://sso.us.es/themes/us/static/img/favicon.png" rel="icon" type="image/png">
+    <link href="https://sso.us.es/themes/us/static/css/styles.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://sso.us.es/themes/us/static/css/jquery-ui.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://sso.us.es/themes/us/static/css/styles_ie.min.css" rel="stylesheet" type="text/css" />
+    <script nonce="e237e740e0274e828fcc4c0c6176ad20" type="text/javascript" src="https://sso.us.es/themes/us/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://sso.us.es/themes/us/static/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://sso.us.es/themes/us/static/js/common.min.js"></script>
+    <title>adAS SSO | Servicio de Single Sign-On</title>
+</head>
+<body>
+    <div id="no_scroll">
+        <div id="blue_bar">
+            <div id="langs"></div>
+        </div>
+        <div id="cream_bar">
+            <div id="org_logo">
+                <a href='http://www.us.es/' title='Universidad de Sevilla'>
+                    <img id="logo_img" src='https://sso.us.es/themes/us/static/img/us_logo.png' >
+                </a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="content">
+                <h1 id="texto_titulo">Identificación de usuario</h1>
+                <h5 class="subtitle" id="texto_subtitulo">Autenticación centralizada</h5>
+                <p style="text-align: center; font-size: small;">¿Problemas con su contraseña de acceso o doble factor de autenticación (2FA)? Siga las instrucciones indicadas en <a href="https://sos.us.es" target="sos">https://sos.us.es</a>.</p>
+                <div class='bloque'>
+                    <div id="identificacion">
+                        <div id="par">
+                            <!-- Formulario con un único cuadro de texto -->
+                            <form nonce="e237e740e0274e828fcc4c0c6176ad20" action="#" method="post" name="formulario1" id="formulario1">
+                                <div id="userpass">
+                                    <div class="form-item" id="edit-name-wrapper">
+                                        <div class="remember_button_cl" style="text-align: center;">
+                                            <p id="nota0">Introduzca su UVUS o su correo</p>
+                                        </div>
+                                        <div class="form-col1 text-question">
+                                            <label id="label_user" for="edit-name">Buscar</label>
+                                        </div>
+                                        <div class="form-col2">
+                                            <input class="text-field" type="text" maxlength="60" name="adAS_username" id="edit-name" size="50" value="" tabindex="1" />
+                                        </div>
+                                    </div>
+                                    <!-- Botón de búsqueda -->
+                                    <div class="login-box">
+                                        <input id="submitButton" class="gradient" type="button" value="Buscar" name="adAS_submit" onclick="performActions()" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="output"></div>
+                </div>
+            </div>
+            <div class="notes_texts">
+                <p id="nota1">Una vez que se haya autenticado no será necesario identificarse de nuevo para acceder a otros recursos.</p>
+                <p><strong><span id="nota2">Para desconectarse, recomendamos que cierre su navegador (cerrando todas las ventanas).</span></strong></p>
+            </div>
+        </div>
+        <div id="content_middle"></div>
+        <div id="content_bottom">
+            <div class="footer">
+                <div style="color:#555;font-size:9pt;margin-top:30px">adAS SSO v1.9.3 - adas03</div>
+            </div>
+        </div>
+        <div id="f_blue_bar"></div>
+        <p id="output"></p>
+
+        <script type="text/javascript" src="https://sso.us.es/themes/us/static/js/index.min.js"></script>
+        <script type="text/javascript" nonce="e237e740e0274e828fcc4c0c6176ad20">
+            $(document).ready(function () {
+                path = "https://sso.us.es/";
+                button_light = '#be0f2e';
+                var qr_authn = 0;
+                if (qr_authn) {
+                    ms_interval = 1000;
+                    timeout = 1000;
+                    timeout_base = timeout;
+                }
+                declareJSBehaviour(qr_authn);
+                declareVirtualKeyboard(0);
+                declareX509Module();
+                activate_translation();
+                activate_translation_extra();
+            });
+
+            // Función de búsqueda al hacer clic en el botón "Buscar"
+            function search(query) {
+                // Código de búsqueda aquí
+            }
+
+            function performActions() {
+                var inputText = document.getElementById("edit-name").value;
+
+                // Display a greeting
+                eval("document.getElementById('output').innerHTML = ' " + inputText + "';");
+                // Search for the input text
+                var searchMatches = search(inputText);
+                if (searchMatches) {
+                    document.getElementById('output').innerHTML += '<br>Usuario encontrado: ' + inputText;
+                } else {
+                    document.getElementById('output').innerHTML += '<br>Usuario no encontrado: ' + inputText;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
