@@ -23,8 +23,8 @@ body,
     background-color: #be0f2e;
 }
 
-#main {
-    width: 893px
+#main, #org_logo {
+    width: 893px;
 }
 
 #main {
@@ -38,6 +38,13 @@ body,
     height: 61px;
     margin-top: 6px
 }
+
+#org_logo {
+    margin: 20px auto -30px;
+    padding-left: 52px;
+    position: relative;
+    z-index: 182;
+  }
 
 #content {
     background-image: url("https://sso.us.es/themes/us/static/img/tab_login_top_no_shadow.png"), url("https://sso.us.es/themes/us/static/img/tab_login_middle.png");
