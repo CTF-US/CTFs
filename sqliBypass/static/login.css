@@ -35,8 +35,8 @@ body,
 }
 
 #logo_img {
-    height: 61px;
-    margin-top: 6px
+    height: 110px;
+    margin-top: -30px
 }
 
 #org_logo {
@@ -47,7 +47,7 @@ body,
   }
 
 #content {
-    background-image: url("https://sso.us.es/themes/us/static/img/tab_login_top_no_shadow.png"), url("https://sso.us.es/themes/us/static/img/tab_login_middle.png");
+    background-image: url("../static/resources/tab_login_top_no_shadow2.png"), url("../static/resources/tab_login_middle.png");
     background-position: 25px 0, center 0;
     background-repeat: no-repeat, repeat-y;
     padding: 2px;
@@ -61,14 +61,14 @@ body,
 #content_bottom {
     height: 53px;
     margin-top: 0;
-    background: url("https://sso.us.es/themes/us/static/img/tab_login_bottom.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    background: url("../static/resources/tab_login_bottom.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 
 #content_middle {
     height: 10px;
     margin-top: 0;
     padding-top: 0;
-    background: url("https://sso.us.es/themes/us/static/img/tab_login_middle.png") repeat-y scroll center center rgba(0, 0, 0, 0);
+    background: url("../static/resources/tab_login_middle.png") repeat-y scroll center center rgba(0, 0, 0, 0);
 }
 
 #submit_ok,
