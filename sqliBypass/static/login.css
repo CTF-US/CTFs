@@ -45,6 +45,7 @@ body,
     padding-left: 52px;
     position: relative;
     z-index: 182
+
 }
 
 #logo_img {
@@ -294,6 +295,14 @@ p {
     -webkit-text-size-adjust: 100%
 }
 
+#submit_ok, #status_close_session, .button_class {
+    border: 1px solid #be0f2e;
+}
+
+.text-field-centered, .text-field, .button-layout {
+    border: 1px solid #be0f2e;
+}
+
 .form-col1 label {
     margin-left: 5px;
     margin-top: 5px
@@ -408,7 +417,7 @@ p {
 #status_subtitle,
 .form-item,
 #userpass div {
-    margin-bottom: 20px
+    margin-bottom: 22px
 }
 
 #titulo_3col {
