@@ -47,7 +47,7 @@ body,
   }
 
 #content {
-    background-image: url("../static/resources/tab_login_top_no_shadow2.png"), url("../static/resources/tab_login_middle.png");
+    background-image: url("../static/resources/tab_login_top_no_shadow.png"), url("../static/resources/tab_login_middle.png");
     background-position: 25px 0, center 0;
     background-repeat: no-repeat, repeat-y;
     padding: 2px;
