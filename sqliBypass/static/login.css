@@ -59,26 +59,36 @@ body,
 }
 
 #content {
-    background-image: url("https://sso.us.es/themes/us/static/img/tab_login_top_no_shadow.png");
+    background-image: url("https://sso.us.es/themes/us/static/img/tab_login_top_no_shadow.png"), url("https://sso.us.es/themes/us/static/img/tab_login_middle.png");
     background-position: 25px 0, center 0;
     background-repeat: no-repeat, repeat-y;
     padding: 2px;
     min-height: 400px
 }
 
+#content h1 {
+    border-bottom: solid 1px #be0f2e;
+}
+
 #content h1, h1 {
     color: #be0f2e;
 }
 
+#content h5 {
+    border-top: dotted 1px #be0f2e;
+}
+
 #content_bottom {
     height: 53px;
-    margin-top: 0
+    margin-top: 0;
+    background: url("https://sso.us.es/themes/us/static/img/tab_login_bottom.png") no-repeat scroll center center rgba(0, 0, 0, 0);
 }
 
 #content_middle {
     height: 10px;
     margin-top: 0;
-    padding-top: 0
+    padding-top: 0;
+    background: url("https://sso.us.es/themes/us/static/img/tab_login_middle.png") repeat-y scroll center center rgba(0, 0, 0, 0);
 }
 
 #submit_ok,
@@ -189,7 +199,8 @@ a {
 }
 
 #par {
-    padding-right: 20px
+    padding-right: 20px;
+    border-right: dotted 1px #be0f2e;
 }
 
 #identificacion {
@@ -236,7 +247,8 @@ h1 {
 h2 {
     font-size: 15px;
     text-transform: uppercase;
-    text-align: center
+    text-align: center;
+    color: #be0f2e;
 }
 
 h3 {
@@ -368,6 +380,10 @@ p {
 .remember_button_cl {
     margin-top: -10px;
     position: relative
+}
+
+#remember_button {
+    color: #be0f2e;
 }
 
 #remember_button a {

@@ -22,6 +22,7 @@
       <div id="main">
          <div id="content">
             <h1 id="texto_titulo">Identificación de usuario</h1>
+            <h5 class="subtitle" id="texto_subtitulo">Autenticación centralizada</h5>
             <div class="bloque">
                <div id="identificacion">
                   <div id="par">
@@ -60,8 +61,16 @@
                      <div id="otherlogin">
                         <div class="modules_grid">
                            <!-- Logo autentificacion por certificado -->
-                           <div class='module_cell'><a id="x509_module" nonce="be648e8f7aeb4cc5b815c90b8aa48582"
-                                 class="own-button x509_module" href="."></a></div>
+                           <div class='module_cell'>
+                              <a id="x509_module" nonce="be648e8f7aeb4cc5b815c90b8aa48582"
+                                 class="own-button x509_module" href=".">
+                                 <div class="button-cont gradient button-layout" title="sml_x509_authn_label">
+                                    <div class="button-icon" nonce="cbb1cb75856985e5a9777e56f88499fb" style="background: url('https://sso.us.es/themes/us/static/img/icon-x509_module.png') no-repeat top;">&nbsp;
+                                    </div>
+                                    <div class="button-text button-text-i18n mod_name_x509_module" id="sml_x509_authn_label">Certificado FNMT-DNIe</div>
+                                 </div>
+                              </a>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -79,8 +88,8 @@
             <div class="footer">
                <div style="color:#555;font-size:9pt;margin-top:30px">adAS SSO v1.9.3 - adas01</div>
             </div>
-            <div id="f_blue_bar"></div>
          </div>
+         <div id="f_blue_bar"></div>
       </div>
 </body>
 
