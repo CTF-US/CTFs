@@ -33,7 +33,7 @@ def addrec():
    else:
       return render_template('login.html')
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET'])
 def home():
     return render_template('index.html')
 
