@@ -103,6 +103,16 @@ body,
     border-bottom: solid 1px #be0f2e;
 }
 
+.errorPsw {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-weight: bold;
+    color: #be0f2e;
+}
+
 #content h5 {
     margin-bottom: .4em;
     padding-top: 5px;
