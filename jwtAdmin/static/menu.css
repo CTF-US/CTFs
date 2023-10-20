@@ -1,0 +1,202 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#site-wrap {
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.inner-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 64em){
+    .base #side-menu, .base .color-selection-preview-mode {
+      transform: none;
+      transition: none;
+      animation: fix-nav-menu-large 200ms linear 0s 1;
+    }
+}
+
+@media only screen and (min-width: 40em){
+    .base #side-menu, .base .color-selection-preview-mode {
+      width: 12.5rem;
+      text-align: left;
+    }
+}
+
+.base #side-menu, .base .color-selection-preview-mode {
+    background-color: #262626;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 200px;
+    height: 100%;
+}
+
+.bb-inner-wrap, nav, ul {
+    height: 100%;
+}
+
+.base #side-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.color-selection-live-mode .themed-background-primary-fill-only, .color-selection-live-mode.themed-background-primary-fill-only, .color-selection-live-mode .themed-background-primary-alt-fill-only.disabled:hover, .color-selection-live-mode .integration-navigation-button-content .themed-background-primary-alt-fill-only {
+    background-color: #bf0a2e !important;
+    color: #ffffff !important;
+}
+
+@media only screen and (min-width: 40em){
+    .base #side-menu, .base .color-selection-preview-mode {
+      text-align: left;
+    }
+}
+
+.color-selection-live-mode .themed-background-primary-fill-only, .color-selection-live-mode.themed-background-primary-fill-only, .color-selection-live-mode .themed-background-primary-alt-fill-only.disabled:hover, .color-selection-live-mode .integration-navigation-button-content .themed-background-primary-alt-fill-only {
+    color: #ffffff !important;
+  }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+  }
+
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+  ul.off-canvas-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-off-canvas-menu * {
+    -webkit-backface-visibility: hidden;
+  }
+
+  ul, ol, dl {
+    font-family: inherit;
+    font-size: .875rem;
+    line-height: 1.6;
+    list-style-position: outside;
+    margin-bottom: 1.25rem;
+  }
+
+  li {
+    margin-top: 20px;
+  }
+
+  .base #side-menu .off-canvas-list .base-navigation-button:first-child, .base .color-selection-preview-mode .off-canvas-list .base-navigation-button:first-child {
+    padding-top: 0.1875rem;
+  }
+
+
+  .base-navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    padding-left: 1.25rem;
+
+  }
+
+  .base-navigation-button span {
+    margin-left: 30px;
+  }
+  /*MAIN*/
+
+  .base #main-content {
+    position: relative;
+  }
+
+  @media only screen and (min-width: 64em){
+      .base #main-content #main-content-inner {
+        padding-left: 12.5rem;
+        height: 100vh;
+      }
+  }
+
+  .base #main-content #main-content-inner {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 3rem);
+  }
+
+  .institution-page-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .banner {
+    background-image: url("https://ev.us.es/bbcswebdav/xid-35288519_1");
+  }
+
+  @media only screen and (min-width: 64em){
+      .banner {
+        height: 10rem;
+      }
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 9.5rem;
+  }
+
+  @media only screen and (min-width: 64em){
+      .modules-container {
+        padding: 1.875rem;
+      }
+  }
+
+  @media only screen and (min-width: 40em){
+      .modules-container {
+        padding: 1.5rem;
+      }
+  }
+
+  .modules-container {
+    max-width: 80rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }

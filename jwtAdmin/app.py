@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, make_response
+from flask import Flask, request, jsonify, make_response, render_template
 import random
 import string
 import jwt
@@ -26,7 +26,7 @@ def login():
     name = generate_name()
     id = random.randint(2, 100)
     token = generate_jwt(name, id)
-    resp = make_response("Se ha asignado un jwt al usuario actual")
+    resp = make_response(render_template('menu.html'))
     resp.set_cookie('token', token)
     return resp
 # Admin panel route
