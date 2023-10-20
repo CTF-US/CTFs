@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import sqlite3 as sql
 app = Flask(__name__)
 
-@app.route('/login',methods = ['POST', 'GET'])
+@app.route('/',methods = ['POST', 'GET'])
 def addrec():
    if request.method == 'POST':
       try:
@@ -32,10 +32,6 @@ def addrec():
            return render_template('login.html',msg = msg)
    else:
       return render_template('login.html')
-
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    return render_template('index.html')
 
 if __name__ == '__main__':
    app.run(debug = True)
