@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import sqlite3 as sql
 app = Flask(__name__)
 
-@app.route('/',methods = ['POST', 'GET'])
+@app.route('/login',methods = ['POST', 'GET'])
 def addrec():
    if request.method == 'POST':
       try:
