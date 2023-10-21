@@ -1,7 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 html, body {
@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.875rem;
-    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+    font-family: "inherit";
     font-weight: 400;
     line-height: 1.5;
     background-color: #ffffff;
@@ -77,6 +77,23 @@ body {
     flex-direction: column;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  border-color: #262626 !important;
+  border-bottom: 5px solid #c56fd5;
+  -webkit-text-fill-color: #fff;
+}
+
+#logo_img {
+  width: 95px;
+  height: 95px;
+  margin-bottom: 10px;
+}
+
 .color-selection-live-mode .themed-background-primary-fill-only, .color-selection-live-mode.themed-background-primary-fill-only, .color-selection-live-mode .themed-background-primary-alt-fill-only.disabled:hover, .color-selection-live-mode .integration-navigation-button-content .themed-background-primary-alt-fill-only {
     background-color: #bf0a2e !important;
     color: #ffffff !important;
@@ -92,10 +109,6 @@ body {
     color: #ffffff !important;
   }
 
-  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-    display: block;
-  }
-
   *, ::before, ::after {
     box-sizing: inherit;
   }
@@ -106,10 +119,6 @@ body {
     padding: 0;
   }
 
-  .left-off-canvas-menu * {
-    -webkit-backface-visibility: hidden;
-  }
-
   ul, ol, dl {
     font-family: inherit;
     font-size: .875rem;
@@ -118,26 +127,39 @@ body {
     margin-bottom: 1.25rem;
   }
 
-  li {
-    margin-top: 20px;
+  li:not(li:first-child) {
+    margin-top: 3px;
   }
 
   .base #side-menu .off-canvas-list .base-navigation-button:first-child, .base .color-selection-preview-mode .off-canvas-list .base-navigation-button:first-child {
     padding-top: 0.1875rem;
   }
 
+  aside{
+    z-index: 1;
+  }
 
   .base-navigation-button {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 180px;
-    padding-left: 1.25rem;
+    justify-content: flex-start;
+    width: 200px;
+    height: 60px;
+    padding-left: 0.8rem;
+  }
 
+  .base-navigation-button:hover {
+    background-color: #8f0722 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    border-left: 4px solid #c56fd5;
+    -webkit-text-fill-color: #fff;
+    cursor: pointer;
+    transition: color 400ms, background-color 400ms;
   }
 
   .base-navigation-button span {
-    margin-left: 30px;
+    margin-left: 15px;
   }
   /*MAIN*/
 
