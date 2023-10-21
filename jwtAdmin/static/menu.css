@@ -192,7 +192,7 @@ header {
   }
 
   .banner {
-    background-image: url("https://ev.us.es/bbcswebdav/xid-35288519_1");
+    background-image: url("../static/resources/Angel.png");
   }
 
   @media only screen and (min-width: 64em){
@@ -207,6 +207,119 @@ header {
     background-position: center;
     background-size: cover;
     height: 9.5rem;
+  }
+
+  @media only screen and (min-width: 64em){
+    .banner__logo-container {
+      transform: none;
+      left: 2rem;
+      top: 3rem;
+    }
+  }
+
+  .banner__logo-container {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-680%, 60%);
+    top: 1rem;
+  }
+
+  @media only screen and (min-width: 64em){
+    .banner__logo {
+      height: 8.75rem;
+      width: 8.75rem;
+    }
+  }
+
+  .banner__logo {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 6.25rem;
+    width: 6.25rem;
+    background-image: url("../static/resources/Logo_CTF_Innosoft.png");
+  }
+
+  @media only screen and (min-width: 64em){
+    .banner__title {
+      text-align: initial;
+      font-size: 1.875rem;
+      padding-right: 0;
+      padding-left: 12rem;
+      padding-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 40em){
+    .banner__title {
+      height: 3.75rem;
+      line-height: 3.75rem;
+      font-size: 1.5rem;
+      padding-top: 0.25rem;
+    }
+  }
+
+  .banner__title {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    padding: 0 1.875rem;
+      padding-top: 0px;
+      padding-right: 1.875rem;
+      padding-left: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    height: 2.875rem;
+    line-height: 2.875rem;
+    font-size: 1.25rem;
+  }
+
+  h1, h2, h3 {
+    font-family: "Noto Serif",serif;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #262626;
+    font-family: "Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: .5rem;
+    margin-top: .2rem;
+    text-rendering: optimizeLegibility;
+  }
+
+  .banner__title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #000);
+    z-index: 0;
+  }
+
+  .banner__title-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner__title > * {
+    z-index: 1;
   }
 
   @media only screen and (min-width: 64em){
