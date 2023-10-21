@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jwt Admin</title>
+    <title>CTF | jwtAdmin</title>
     <link type="text/css" rel="stylesheet" href="../static/menu.css">
 </head>
 <body>
@@ -18,17 +18,17 @@
                         <nav>
                             <ul class = "off-canvas-list" id = "base_tools">
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 16 16"
                                             xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-bank">
                                             <path
                                                 d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z" />
                                         </svg>
-                                        <span> Página de la institución</span>
+                                        <span>Página de la institución</span>
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg fill="#ffffff" width="30px" height="30px" viewBox="0 0 32 32"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -38,7 +38,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 17 17" version="1.1"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -50,7 +50,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -62,7 +62,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -73,7 +73,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 32 32" version="1.1"
                                             xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -100,7 +100,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -112,7 +112,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg fill="#ffffff" width="30px" height="30px" viewBox="0 0 24 24"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -122,7 +122,7 @@
                                     </a>
                                 </li>
                                 <li class="base-navigation-button">
-                                    <a href="" class="link_secrets">
+                                    <a href="/" class="link_secrets">
                                         <svg width="30px" height="30px" viewBox="0 0 16 16"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path fill="#ffffff"
@@ -160,19 +160,20 @@
                             </h2>
                         </div>
                         <div class="modules-container">
-                                <h2>
+                                <h1>
                                     ¡Hola!
-                                </h2>
-                                <h2>
-                                    Somos el grupo de CTF de estas jornadas Innosoft.
+                                </h1>
+                                <h2 style="text-align: center;">
+                                    La seguridad ante intentos de acceso no autorizado es esencial para proteger la confidencialidad, integridad y disponibilidad 
+                                    de los datos y sistemas, así como para cumplir con regulaciones legales y preservar la reputación de la organización.
                                 </h2>
                                 <h2>
                                     ¡Buena suerte tratando de entrar en el panel de administrador!
                                 </h2>
-                                <div class="row">
-                                    <a href="/admin"> Panel de administrador</a>
-                                    <img id="logo_img_mascota" src='../static/resources/Synthia.png'>
-                                </div>
+                                <h1 class="red-mark" style="margin-top: 50px;">
+                                    {{msg}}
+                                </h2>
+                                <a style="margin-top: 50px;" href="/admin" class="admin"> Panel de administrador</a>
                         </div>
                     </div>
                 </main>

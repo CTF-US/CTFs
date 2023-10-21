@@ -345,18 +345,49 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    gap: 100px;
+  .success {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .red-mark {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #be0f2e;
+  }
+
+  .admin {
+    text-transform: uppercase;
+    padding: 15px 23px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 24px;
+    min-width: 160px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    background-color: #be0f2e !important;
+    font-family: 'Raleway',sans-serif !important;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  .admin:hover {
+    background-color: #8f0722 !important;
+    cursor: pointer;
   }
 
   #logo_img_mascota {

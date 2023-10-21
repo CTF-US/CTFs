@@ -41,8 +41,9 @@ def admin():
     token = request.cookies.get('token')
     payload = verify_jwt(token)
     if payload and payload['id'] == 1:
-        return make_response(render_template('menu2.html'))
+        return make_response(render_template('result.html'))
     else:
-        return make_response(render_template('menu3.html')), 401
+        msg = "Acceso denegado, usted no es un administrador"
+        return make_response(render_template('menu.html', msg = msg)), 401
 if __name__ == '__main__':
     app.run(debug=True)
