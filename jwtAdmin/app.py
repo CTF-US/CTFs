@@ -41,7 +41,7 @@ def admin():
     token = request.cookies.get('token')
     payload = verify_jwt(token)
     if payload and payload['id'] == 1:
-        return '<h1>Bienvenido al panel de administrador</h1>'
+        return make_response(render_template('menu.html'))
     else:
         return '<h1>No tienes permiso para acceder a esta página</h1>', 401
 if __name__ == '__main__':
