@@ -29,7 +29,13 @@ def login():
     resp = make_response(render_template('menu.html'))
     resp.set_cookie('token', token)
     return resp
+
+@app.route('/secrets', methods=['GET'])
+def secrets():
+    resp = make_response(render_template('secret.html'))
+    return resp
 # Admin panel route
+
 @app.route('/admin')
 def admin():
     token = request.cookies.get('token')
