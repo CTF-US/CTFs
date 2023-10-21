@@ -37,7 +37,7 @@ body {
     margin: auto;
 }
 
-.inner-wrap {
+.inner-wrap, .base, main{
     position: relative;
     width: 100%;
     height: 100%;
@@ -132,7 +132,7 @@ header {
     margin-top: 3px;
   }
 
-  .base #side-menu .off-canvas-list .base-navigation-button:first-child, .base .color-selection-preview-mode .off-canvas-list .base-navigation-button:first-child {
+  #side-menu .base-navigation-button:first-child {
     padding-top: 0.1875rem;
   }
 
@@ -168,8 +168,14 @@ header {
     position: relative;
   }
 
+  main {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
   @media only screen and (min-width: 64em){
-      .base #main-content #main-content-inner {
+      .base #main-content {
         padding-left: 12.5rem;
         height: 100vh;
       }
@@ -180,10 +186,12 @@ header {
     text-decoration: none;
   }
 
-  .base #main-content #main-content-inner {
+  .base #main-content {
+    position: relative;
+    padding-left: 12.5rem;
     overflow-y: auto;
     overflow-x: hidden;
-    height: calc(100vh - 3rem);
+    height: 100vh;
   }
 
   .institution-page-container {
@@ -221,9 +229,6 @@ header {
     display: block;
     position: absolute;
     z-index: 1;
-    left: 50%;
-    transform: translate(-680%, 60%);
-    top: 1rem;
   }
 
   @media only screen and (min-width: 64em){
@@ -238,8 +243,6 @@ header {
     background-size: cover;
     overflow: hidden;
     border-radius: 50%;
-    height: 6.25rem;
-    width: 6.25rem;
     background-image: url("../static/resources/Logo_CTF_Innosoft.png");
   }
 
@@ -339,5 +342,5 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    height: 100%;
   }
