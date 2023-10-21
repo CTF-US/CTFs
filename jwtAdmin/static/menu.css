@@ -140,13 +140,21 @@ header {
     z-index: 1;
   }
 
-  .base-navigation-button {
+  .base-navigation-button:not(.base-navigation-button:last-child) {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 200px;
     height: 60px;
     padding-left: 0.8rem;
+  }
+
+  .base-navigation-button:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
   }
 
   .base-navigation-button:hover {
@@ -168,6 +176,14 @@ header {
     text-decoration: none;
     display: flex;
     align-items: center;
+    width: 200px;
+    height: 60px;
+  }
+
+  .link_secrets.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /*MAIN*/

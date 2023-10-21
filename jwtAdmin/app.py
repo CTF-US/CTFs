@@ -44,6 +44,7 @@ def admin():
         return make_response(render_template('result.html'))
     else:
         msg = "Acceso denegado, usted no es un administrador"
-        return make_response(render_template('menu.html', msg = msg)), 401
+        angry = "../static/resources/synthia_angry.png"
+        return make_response(render_template('menu.html', msg = msg, angry = angry)), 401
 if __name__ == '__main__':
     app.run(debug=True)
