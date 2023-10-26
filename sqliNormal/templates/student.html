@@ -1,21 +1,52 @@
+<!DOCTYPE html>
 <html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+         }
+         .banner {
+            height: 30vh;
+            width: 100%;
+         }
+      </style>
+      <title>Student</title>
+  </head>
    <body>
+      <div>
+         <div class="cabecera">
+            <div class="fondo">
+               <img src="https://static.vecteezy.com/system/resources/previews/006/076/790/non_2x/10-abstract-modern-attractive-black-and-red-background-free-vector.jpg" alt="banner" class="banner"><br>
+            </div>
+            <div class="logo">
+
+            </div>
+         </div>
+         <div class="form">
+            <form action = "/add_student" method = "POST">
+               <h3>Student Information</h3>
+               Name<br>
+               <input type = "text" name = "nm" /></br>
+               
+               Address<br>
+               <textarea name = "add" ></textarea><br>
+               
+               City<br>
+               <input type = "text" name = "city" /><br>
+               
+               PINCODE<br>
+               <input type = "text" name = "pin" /><br>
+               <input type = "submit" value = "submit" /><br>
+            </form>
+         </div>
+         
+      </div>
       
-      <form action = "/add_student" method = "POST">
-         <h3>Student Information</h3>
-         Name<br>
-         <input type = "text" name = "nm" /></br>
-         
-         Address<br>
-         <textarea name = "add" ></textarea><br>
-         
-         City<br>
-         <input type = "text" name = "city" /><br>
-         
-         PINCODE<br>
-         <input type = "text" name = "pin" /><br>
-         <input type = "submit" value = "submit" /><br>
-      </form>
       
    </body>
 </html>
