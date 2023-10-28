@@ -15,7 +15,7 @@ def addrec():
          correctDefaultCred = False
          correctSqlinyection = False
          
-         with sql.connect("sqliBypass/database.db") as con:
+         with sql.connect("database.db") as con:
             if username =='username' and password == 'password':
                correctDefaultCred=True
                msg ="flag{pRi_meRa__FlAg_deL_Reto_fAltaOtRa}"
@@ -50,4 +50,5 @@ def home():
     return render_template('index.html')
 
 if __name__ == '__main__':
-   app.run(debug = True)
+	app.run(host='0.0.0.0', port=5000)
+
