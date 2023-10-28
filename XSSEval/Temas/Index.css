@@ -1,0 +1,265 @@
+container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.texto {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.countdown-value {
+    font-size: 36px;
+    margin: 6px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #bf0a2e;
+    place-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.countdown-label {
+    font-size: 13px;
+    color: black;
+    margin: 10px;
+}
+
+
+
+.bb-login {
+    background-color: #FFFFFF;
+}
+
+.row {
+    max-width: 90%;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 105rem;
+}
+
+
+/*GRID AND GRID ELEMENTS*/
+.grid-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+    color: #000000;
+    margin: 0 auto !important;
+    width: 100%;
+    /*     max-width: 1400px; */
+    grid-template-areas: "information sso announcements";
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 0 2em 1em;
+    text-align: center;
+}
+
+.grid-item.information {
+    grid-area: information;
+}
+
+.grid-item.login-form {
+    display: none;
+    grid-area: login;
+}
+
+.grid-item.sso-login {
+    grid-area: sso;
+}
+
+.grid-item.login-page-announcements {
+    grid-area: announcements;
+    margin-top: 0;
+}
+
+/* Cabecera */
+.clear {
+    clear: both;
+}
+
+.bb-login #header {
+    background: url("../Imagenes/banner.png") no-repeat center center #FFFFFF;
+    background-size: cover;
+    height: 30vh;
+}
+
+h1.texto {
+    color: #FFFFFF;
+    line-height: 30vh;
+    font-size: 3em;
+    padding-left: 8em;
+}
+
+.bb-login .login-logo {
+    margin-top: 1.375rem;
+    text-align: left;
+    margin-left: 1.375rem;
+    float: left;
+}
+
+h3 {
+    font-size: 2em;
+    color: #bf0a2e;
+}
+
+
+.login {
+    width: 100%;
+    height: 100%;
+}
+
+#logo_img_mascota {
+    height: 110px;
+}
+
+.grid-item p {
+    text-align: left;
+}
+
+#entry-login {
+    background-color: #bf0a2e;
+    margin-top: .3125rem;
+}
+
+.aviso-legal a,
+.information a {
+    color: #bf0a2e;
+}
+
+.bb-login .login-page-announcements #loginAnnouncements {
+    max-width: 100%;
+}
+
+.bb-login .login-page-announcements {
+    display: block;
+}
+
+.bb-login .login-page-announcements ul>li {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 0;
+}
+
+.bb-login .login-page-announcements #loginAnnouncements>ul>li {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.bb-login .login-page-announcements #loginAnnouncements>ul>li .vtbegenerated {
+    overflow: visible;
+    max-height: 100%;
+}
+
+#redirectProvidersDropdownButton {
+    display: none;
+}
+
+#loginRedirectProviderList li {
+    list-style: none;
+    background: #FFFFFF;
+    padding: 1em;
+}
+
+#loginRedirectProviderList li a {
+    color: #000000;
+}
+
+#loginRedirectProviderList li a:hover,
+#loginRedirectProviderList li a:focus {
+    text-decoration: none;
+}
+
+#loginRedirectProviderList li a img {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:780px) {
+
+    .grid-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "sso" "information" "announcements";
+    }
+
+    h1.texto {
+        display: none;
+    }
+
+    .bb-login .login-logo.customized-logo img {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+#org_logo {
+    width: 893px;
+}
+
+#logo_img {
+    height: 250px;
+    margin-top: 2%;
+    margin-left: -250px;
+    border-radius: 50%
+}
+
+#org_logo {
+    margin: 20px auto -30px;
+    margin-top: -10px;
+  }
+
+  @media all and (max-width:694px) {
+    #logo_img {
+        height: 250px
+    }
+
+}
+
+@media all and (max-width:691px) {
+    #logo_img {
+        height: 3em
+    }
+
+    #org_logo {
+        padding-left: 3em
+    }
+
+
+}
+
+@media all and (max-width:545px) {
+
+    #logo_img {
+        margin-left: -2%
+    }
+
+
+}
+
+@media all and (max-width:477px) {
+    #logo_img {
+        height: 2.5em
+    }
+
+}

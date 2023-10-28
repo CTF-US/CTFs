@@ -1,0 +1,11 @@
+Alias /bitnami/ "/opt/lampp/apache2/htdocs/"
+Alias /bitnami "/opt/lampp/apache2/htdocs"
+
+<Directory "/opt/lampp/htdocs">
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+    AddType application/x-httpd-php .phtml
+
+</Directory>
