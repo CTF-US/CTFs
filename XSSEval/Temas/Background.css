@@ -1,0 +1,57 @@
+/*
+ *  adAS-SSO
+ * ================================================
+ *
+ * Copyright (C) 2010 - 2023 by Auditoria y ConsultorÃ­a de Privacidad y
+ * Seguridad (PRiSE http://www.prise.es)
+ *
+ * *****************************************************************************
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ *
+ * ************************************************************************** */
+ .text-field-centered , .text-field , .button-layout{ border: 1px solid #be0f2e;}
+ #content h1 { border-bottom: solid 1px #be0f2e;}
+ #par { border-right: dotted 1px #be0f2e; }
+ #blue_bar, #f_blue_bar{ background-color: #be0f2e;}
+ #content h1, h1 { color:  #be0f2e;}
+ #content h5,.notification h2 { border-top: dotted 1px #be0f2e;}
+ h2, .exception_subtitle { color: #be0f2e;}
+ a,#wayf_button_close, #wayf_button_close2, #qr_button_close2,#notlogout,.rowname { color: #be0f2e;}
+ #remember_button{  color:#be0f2e;}
+ #copyright,  .notification .order{ color: #be0f2e;}
+ .more_info_button_cl a{ color:#1A7020;}
+ .form-col1, #submit_ok, #status_close_session, .button_class, .own-button,.button-layout{
+     background: #be0f2e;
+     background: -moz-linear-gradient(top, #be0f2e 50%, #be0f2e 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#be0f2e), color-stop(100%,#be0f2e)); /* Chrome,Safari4+ */
+     background: -webkit-linear-gradient(top,  #be0f2e 50%,#be0f2e 100%); /* Chrome10+,Safari5.1+ */
+     background: -o-linear-gradient(top,  #be0f2e 50%,#be0f2e 100%); /* Opera 11.10+ */
+     background: -ms-linear-gradient(top,  #be0f2e 50%,#be0f2e 100%); /* IE10+ */
+     background: linear-gradient(top,  #be0f2e 50%,#be0f2e 100%); /* W3C */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#be0f2e", endColorstr="#be0f2e",GradientType=0 ); /* IE6-8 */
+ }
+ #submit_ok, #status_close_session, .button_class{ border: 1px solid #be0f2e;}
+ #content {
+     background-image:
+
+         url("/Imagenes/tema2.png");
+ }
+ #content_bottom{
+     background:
+         url("/Imagenes/tema.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+ }
+ #content_middle{
+     background:
+         url("/Imagenes/tema2.png") repeat-y scroll center center rgba(0, 0, 0, 0);
+ }
